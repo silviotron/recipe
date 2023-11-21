@@ -1,177 +1,338 @@
 [
     {
         "id": 1,
-        "title": "Chicken Biryani",
-        "description": "Chicken Biryani is a savory chicken and rice dish that includes layers of chicken, rice, and aromatics that are steamed together. The bottom layer of rice absorbs all the chicken juices as it cooks, giving it a tender texture and rich flavor, while the top layer of rice turns out white and fluffy. Buried in the Biryani, you’ll find whole cuts of succulent chicken bursting with flavor from the potent array of spices, herbs, and aromatics it’s marinated in.",
-        "prep_time": "30 minutes",
-        "cook_time": "1 hour",
-        "total_time": "2 hours 30 minutes",
-        "difficulty": "medium",
-        "yield": "5 servings",
-        "cuisine": "Indian",
+        "title": "Tortitas",
+        "description": "Deléitate con estas irresistibles tortitas americanas, doradas a la perfección por fuera y extraordinariamente esponjosas por dentro. Su mezcla equilibrada de harina, huevos y leche crea un festín de sabor reconfortante. Sirve con sirope de arce para una experiencia de desayuno que eleva el placer culinario a nuevas alturas.",
+        "prep_time": "10 minutos",
+        "rest_time": "60 minutos",
+        "cook_time": "20 minutos",
+        "total_time": "30 minutos",
+        "difficulty": "facil",
+        "yield": "16 unidades",
         "rating": 5,
         "ingredients": [
             {
-                "ing_id": 1,
                 "aa_url": "",
-                "name": "Vegetable oil",
+                "name": "Mantequilla",
                 "info": "",
-                "quantity": "1 tablespoon"
+                "quantity": "30 g"
             },
             {
-                "ing_id": 2,
                 "aa_url": "",
-                "name": "Garlic",
-                "info": "grated",
-                "quantity": "10 grams"
+                "name": "Huevo",
+                "info": "M",
+                "quantity": "2"
             },
             {
-                "ing_id": 3,
                 "aa_url": "",
-                "name": "Ginger",
-                "info": "grated",
-                "quantity": "10 grams"
+                "name": "Leche",
+                "info": "entera",
+                "quantity": "250 ml"
             },
             {
-                "ing_id": 4,
                 "aa_url": "",
-                "name": "Green mirchi",
-                "info": "slit",
-                "quantity": "2 no.s"
-            },
-            {
-                "ing_id": 5,
-                "aa_url": "",
-                "name": "Mint leaves",
-                "info": "finely chopped",
-                "quantity": "5 grams"
-            },
-            {
-                "ing_id": 6,
-                "aa_url": "",
-                "name": "Corriander leaves",
-                "info": "finely chopped",
-                "quantity": "10 grams"
-            },
-            {
-                "ing_id": 7,
-                "aa_url": "",
-                "name": "Garam masala",
+                "name": "Extracto de vainilla",
                 "info": "",
-                "quantity": "1 tablespoon"
+                "quantity": "5 ml"
             },
             {
-                "ing_id": 8,
                 "aa_url": "",
-                "name": "Ground cinnamon",
+                "name": "Harina de trigo",
                 "info": "",
-                "quantity": "1/2 teaspoon"
+                "quantity": "200 g"
             },
             {
-                "ing_id": 9,
                 "aa_url": "",
-                "name": "Salt",
+                "name": "Levadura química",
                 "info": "",
-                "quantity": "1 teaspoon"
+                "quantity": "10 g"
             },
             {
-                "ing_id": 10,
                 "aa_url": "",
-                "name": "Chicken",
-                "info": "skinless, bone-in",
-                "quantity": "1 kg"
-            },
-            {
-                "ing_id": 11,
-                "aa_url": "",
-                "name": "Water",
+                "name": "Azucar",
                 "info": "",
-                "quantity": "6 cups"
-            },
-            {
-                "ing_id": 9,
-                "aa_url": "",
-                "name": "Salt",
-                "info": "",
-                "quantity": "2.5 teaspoons"
-            },
-            {
-                "ing_id": 12,
-                "aa_url": "",
-                "name": "Green cardamon",
-                "info": "smashed",
-                "quantity": "5 no.s"
-            },
-            {
-                "ing_id": 13,
-                "aa_url": "",
-                "name": "Cumin seeds",
-                "info": "",
-                "quantity": "1 teaspoon"
-            },
-            {
-                "ing_id": 14,
-                "aa_url": "",
-                "name": "Bay leaf",
-                "info": "",
-                "quantity": "1 no"
-            },
-            {
-                "ing_id": 15,
-                "aa_url": "",
-                "name": "Basmati rice",
-                "info": "~ 2 cups",
-                "quantity": "360 grams"
-            },
-            {
-                "ing_id": 16,
-                "aa_url": "",
-                "name": "Ghee",
-                "info": "",
-                "quantity": "2 tablespoon"
-            },
-            {
-                "ing_id": 17,
-                "aa_url": "",
-                "name": "Medium onions",
-                "info": "sliced thin",
-                "quantity": "2 no.s"
-            },
-            {
-                "ing_id": 18,
-                "aa_url": "",
-                "name": "Reserved boiling liquid",
-                "info": "from rice",
-                "quantity": "1 cup"
-            },
-            {
-                "ing_id": 19,
-                "aa_url": "",
-                "name": "Saffron threads",
-                "info": "",
-                "quantity": "1/2 teaspoon"
-            },
-            {
-                "ing_id": 6,
-                "aa_url": "",
-                "name": "Corriander leaves",
-                "info": "finely chopped for garnishing",
-                "quantity": "5 grams"
+                "quantity": "40 g"
             }
         ],
         "steps": [
-            "To marinate the chicken for the biryani, combine the vegetable oil, garlic, ginger, chili peppers, mint, cilantro, garam masala, cinnamon and salt in a large bowl and stir together. Add the chicken pieces and toss together making sure the chicken is thoroughly coated in the marinade. Allow the chicken to marinate for at least 1 hour or up to overnight.",
-            "In a pot wide enough to hold the chicken in a single layer, add the ghee and onions and saute the onions until they are well caramelized (15-20 minutes). Transfer the caramelized onions to a bowl and set aside.",
-            "While the onions caramelize, prepare the rice by washing in a strainer under cold running water until the water runs clear.",
-            "To par-boil the rice, add the water, salt, cardamom, cumin and bay leaf to a pot and bring to a boil. Add the rice and boil for 7 minutes. Drain the rice, reserving 1 cup of the liquid.",
-            "In the pot you caramelized the onions in, add the chicken in a single layer, skin-side down. Fry until golden brown on one side (about 5 minutes). Flip the chicken over and fry the other side until golden brown. Transfer the chicken back to the bowl you marinated it in.",
-            "To assemble the biryani, add the saffron to the rice and toss to distribute evenly. Add half the rice mixture to the bottom of the pot you browned the chicken in.",
-            "Top the rice with the chicken in a single layer.",
-            "Top the chicken with an even layer of caramelized onions.",
-            "Finish putting together the Biryani by adding the rest of the rice in an even layer. Add 1 cup of reserved liquid from boiling the rice. Cover the pot with a lid and put the pot on the stove over medium heat and set the timer for 20 minutes. When you can see steam escaping from under the lid, turn down the heat to low and continue cooking until the timer goes off and then turn off the heat.",
-            "Without opening the lid, set the timer for another 10 minutes to steam the biryani.",
-            "Mix the Chicken Biryani together and then transfer to a serving platter. Garnish with fresh cilantro and serve."
+            "Fundimos la mantequilla y la dejamos atemperar ligeramente, pero sin que pierda su forma líquida. Batimos los huevos junto con la leche y el extracto de vainilla, mezclando bien. En un recipiente hondo tamizamos la harina junto con el impulsor químico y le agregamos el azúcar. Mezclamos hasta integrar. Hacemos un hueco en el centro, a modo de volcán, y vertemos la mezcla de ingredientes húmedos. Removemos suavemente con unas varillas para se integre bien todo.",
+            "Cuando hayamos terminado de mezclar, añadimos la mantequilla y batimos hasta que la mezcla esté homogénea. Cubrimos el recipiente con papel film y dejamos reposar la mezcla en la nevera durante una hora. Colocamos una plancha sobre el fuego a temperatura media. Cuando esté caliente vertemos pequeñas porciones de la masa sobre la plancha, dejando espacio entre ellas para que no se peguen entre sí, y cocemos un par de minutos.",
+            "Cuando empiecen a salir pequeñas burbujas en la superficie de las tortitas, volteamos y cocemos por el otro lado durante un par de minutos más. Repetimos la operación hasta terminar con la masa. Para que las tortitas no se enfríen mientras hacemos el resto las colocamos sobre un plato cubierto con un trapo de cocina limpio y las conservamos en el horno a unos 50ºC."
         ],
-        "image": "./images/Chicken Biryani.jpeg"
+        "image": "./images/tortitas.webp"
+    },
+    {
+        "id": 2,
+        "title": "Bizcocho de Yogur",
+        "description": "Disfruta de la esponjosidad y el sabor único de este delicioso bizcocho de yogur. Su preparación simple y su resultado esponjoso lo convierten en el postre perfecto para cualquier ocasión. Sirve con un toque de azúcar glas para realzar su presentación.",
+        "prep_time": "15 minutos",
+        "rest_time": "20 minutos",
+        "cook_time": "40 minutos",
+        "total_time": "1 hora 15 minutos",
+        "difficulty": "medio",
+        "yield": "12 porciones",
+        "rating": 4.8,
+        "ingredients": [
+            {
+                "aa_url": "",
+                "name": "Yogur natural",
+                "info": "",
+                "quantity": "1 envase (125 g)"
+            },
+            {
+                "aa_url": "",
+                "name": "Huevo",
+                "info": "L",
+                "quantity": "3"
+            },
+            {
+                "aa_url": "",
+                "name": "Azúcar",
+                "info": "",
+                "quantity": "200 g"
+            },
+            {
+                "aa_url": "",
+                "name": "Aceite de girasol",
+                "info": "",
+                "quantity": "125 ml"
+            },
+            {
+                "aa_url": "",
+                "name": "Harina de trigo",
+                "info": "",
+                "quantity": "250 g"
+            },
+            {
+                "aa_url": "",
+                "name": "Levadura en polvo",
+                "info": "",
+                "quantity": "15 g"
+            },
+            {
+                "aa_url": "",
+                "name": "Sal",
+                "info": "una pizca",
+                "quantity": ""
+            },
+            {
+                "aa_url": "",
+                "name": "Azúcar glas",
+                "info": "para decorar",
+                "quantity": ""
+            }
+        ],
+        "steps": [
+            "Precalienta el horno a 180°C. Engrasa y enharina un molde para bizcocho.",
+            "En un tazón grande, bate los huevos y agrega el yogur, el azúcar y el aceite. Mezcla bien hasta obtener una masa homogénea.",
+            "Tamiza la harina, la levadura en polvo y la sal sobre la mezcla húmeda. Remueve suavemente hasta que todos los ingredientes estén bien combinados.",
+            "Vierte la masa en el molde preparado y hornéala durante aproximadamente 40 minutos o hasta que al insertar un palillo en el centro, este salga limpio.",
+            "Deja enfriar el bizcocho en el molde durante 20 minutos antes de transferirlo a una rejilla para que se enfríe completamente.",
+            "Espolvorea con azúcar glas antes de servir. ¡Disfruta de este delicioso bizcocho de yogur!"
+        ],
+        "image": "./images/bizcocho.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Tortilla de Patata Española",
+        "description": "Descubre la deliciosa simplicidad de la Tortilla de Patata Española, un clásico que cautiva con su combinación perfecta de patatas, huevos y un toque de sal. Con una textura jugosa por dentro y dorada por fuera, esta tortilla es un deleite culinario que evoca los sabores reconfortantes de la cocina española.",
+        "prep_time": "20 minutos",
+        "cook_time": "25 minutos",
+        "total_time": "45 minutos",
+        "difficulty": "fácil",
+        "yield": "6 porciones",
+        "rating": 4.9,
+        "ingredients": [
+            {
+                "aa_url": "",
+                "name": "Patatas",
+                "info": "medianas",
+                "quantity": "4"
+            },
+            {
+                "aa_url": "",
+                "name": "Huevos",
+                "info": "L",
+                "quantity": "6"
+            },
+            {
+                "aa_url": "",
+                "name": "Aceite de oliva",
+                "info": "",
+                "quantity": "150 ml"
+            },
+            {
+                "aa_url": "",
+                "name": "Sal",
+                "info": "al gusto",
+                "quantity": ""
+            }
+        ],
+        "steps": [
+            "Pela las patatas y córtalas en rodajas finas. Calienta el aceite de oliva en una sartén a fuego medio. Añade las patatas y cocina hasta que estén tiernas pero no doradas, removiendo ocasionalmente.",
+            "Mientras las patatas se cocinan, bate los huevos en un tazón grande y agrega sal al gusto.",
+            "Cuando las patatas estén listas, escúrrelas y agrégales al tazón con los huevos batidos. Mezcla bien para asegurarte de que las patatas estén completamente cubiertas por los huevos.",
+            "En la misma sartén, vierte la mezcla de patatas y huevos. Cocina a fuego medio-bajo durante unos 10-15 minutos o hasta que los bordes estén dorados y el centro esté casi cuajado.",
+            "Con la ayuda de un plato o tapadera, da la vuelta a la tortilla y cocina el otro lado durante otros 8-10 minutos, o hasta que esté completamente cuajada.",
+            "Sirve caliente o a temperatura ambiente. ¡Disfruta de la auténtica Tortilla de Patata Española sin cebolla!"
+        ],
+        "image": "./images/tortilla de patata.webp"
+    },
+    {
+        "id": 4,
+        "title": "Arroz Caldoso de Cerdo",
+        "description": "Disfruta de la calidez reconfortante de este arroz caldoso de cerdo, un plato que combina la suavidad del arroz con la riqueza de sabores del cerdo. Perfecto para días fríos o simplemente para deleitar tu paladar con una experiencia culinaria reconfortante.",
+        "prep_time": "15 minutos",
+        "cook_time": "45 minutos",
+        "total_time": "1 hora",
+        "difficulty": "intermedio",
+        "yield": "4 porciones",
+        "rating": 4.7,
+        "ingredients": [
+            {
+                "aa_url": "",
+                "name": "Cerdo (paleta o lomo)",
+                "info": "cortado en trozos",
+                "quantity": "500 g"
+            },
+            {
+                "aa_url": "",
+                "name": "Arroz",
+                "info": "tipo corto",
+                "quantity": "1 taza"
+            },
+            {
+                "aa_url": "",
+                "name": "Cebolla",
+                "info": "picada",
+                "quantity": "1"
+            },
+            {
+                "aa_url": "",
+                "name": "Ajo",
+                "info": "picado",
+                "quantity": "3 dientes"
+            },
+            {
+                "aa_url": "",
+                "name": "Tomate",
+                "info": "picado",
+                "quantity": "2 medianos"
+            },
+            {
+                "aa_url": "",
+                "name": "Pimiento rojo",
+                "info": "picado",
+                "quantity": "1"
+            },
+            {
+                "aa_url": "",
+                "name": "Pimiento verde",
+                "info": "picado",
+                "quantity": "1"
+            },
+            {
+                "aa_url": "",
+                "name": "Caldo de pollo",
+                "info": "",
+                "quantity": "1.5 litros"
+            },
+            {
+                "aa_url": "",
+                "name": "Pimentón",
+                "info": "al gusto",
+                "quantity": ""
+            },
+            {
+                "aa_url": "",
+                "name": "Azafrán",
+                "info": "opcional",
+                "quantity": "unas hebras"
+            },
+            {
+                "aa_url": "",
+                "name": "Aceite de oliva",
+                "info": "",
+                "quantity": "3 cucharadas"
+            },
+            {
+                "aa_url": "",
+                "name": "Sal y pimienta",
+                "info": "al gusto",
+                "quantity": ""
+            },
+            {
+                "aa_url": "",
+                "name": "Perejil fresco",
+                "info": "para decorar",
+                "quantity": ""
+            }
+        ],
+        "steps": [
+            "En una olla grande, calienta el aceite de oliva a fuego medio. Añade la cebolla, el ajo, el pimiento rojo y verde, y sofríe hasta que las verduras estén tiernas.",
+            "Agrega los trozos de cerdo y cocina hasta que estén dorados por todos lados. Condimenta con sal, pimienta y pimentón al gusto.",
+            "Incorpora el tomate picado y cocina hasta que se forme una especie de sofrito.",
+            "Añade el arroz y revuelve para que se impregne bien con los sabores del sofrito.",
+            "Vierte el caldo de pollo caliente en la olla. Agrega el azafrán si lo estás utilizando. Lleva a ebullición y luego reduce el fuego a medio-bajo.",
+            "Cocina a fuego lento durante unos 20-25 minutos o hasta que el arroz esté tierno y haya absorbido gran parte del líquido.",
+            "Prueba y ajusta la sazón según sea necesario. Sirve caliente, espolvorea con perejil fresco picado y disfruta de este delicioso arroz caldoso de cerdo."
+        ],
+        "image": "./images/arroz cerdo.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Pizza",
+        "description": "Disfruta de una explosión de sabores con esta pizza que destaca los deliciosos champiñones como topping principal. Una mezcla perfecta de ingredientes frescos y sabrosos que harán las delicias de cualquier amante de la pizza.",
+        "prep_time": "20 minutos",
+        "total_time": "1 hora 35 minutos",
+        "difficulty": "fácil",
+        "yield": "1 pizza mediana",
+        "rating": 4.8,
+        "ingredients": [
+            {
+                "aa_url": "",
+                "name": "Harina de trigo",
+                "info": "",
+                "quantity": "2 tazas"
+            },
+            {
+                "aa_url": "",
+                "name": "Levadura seca activa",
+                "info": "",
+                "quantity": "1 cucharadita"
+            },
+            {
+                "aa_url": "",
+                "name": "Agua tibia",
+                "info": "",
+                "quantity": "3/4 taza"
+            },
+            {
+                "aa_url": "",
+                "name": "Aceite de oliva",
+                "info": "",
+                "quantity": "2 cucharadas"
+            },
+            {
+                "aa_url": "",
+                "name": "Azúcar",
+                "info": "",
+                "quantity": "1 cucharadita"
+            },
+            {
+                "aa_url": "",
+                "name": "Sal",
+                "info": "",
+                "quantity": "1/2 cucharadita"
+            }
+        ],
+        "steps": [
+            "En un tazón pequeño, mezcla la levadura seca con el agua tibia y el azúcar. Deja reposar durante unos minutos hasta que comience a espumar.",
+            "En un tazón grande, mezcla la harina y la sal.",
+            "Añade la mezcla de levadura espumosa y el aceite de oliva a la harina. Mezcla hasta formar una masa.",
+            "Amasa la masa en una superficie enharinada durante unos 5-7 minutos, o hasta que esté suave y elástica.",
+            "Coloca la masa en un tazón engrasado, cúbrelo con un paño húmedo y deja reposar en un lugar cálido durante aproximadamente 1 hora, o hasta que la masa haya duplicado su tamaño."
+        ],
+        "image": "./images/masa_pizza_vegana.jpg"
     }
 ]

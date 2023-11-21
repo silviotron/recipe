@@ -85,13 +85,18 @@
 </head>
 
 <body>
-    <ul id="fileList"></ul>
-
     <script>
 
 
         // Function to create a recipe format for the details
-        function displayRecipeDetails(recipe) {
+        function displayRecipeDetails(json) {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            recipe = json[urlParams.get('view')]
+            if (recipe == null) {
+                recipe = json[0]
+            }
+
             // Recipe Title
             const titleHeading = document.createElement('h1');
             titleHeading.textContent = recipe.title;
@@ -109,25 +114,27 @@
             // General Recipe Details
             const generalDetailsParagraph = document.createElement('div');
             generalDetailsParagraph.classList.add('general-details');
-            generalDetailsParagraph.innerHTML = `<p><strong>Yield:</strong> ${recipe.yield}</p>
-                                        <p><strong>Cuisine:</strong> ${recipe.cuisine}</p>
-                                        <p><strong>Difficulty:</strong> ${recipe.difficulty}</p>
-                                        <p><strong>Rating:</strong> ${recipe.rating}</p>
-                                        <p><strong>Prep Time:</strong> ${recipe.prep_time}</p>
-                                        <p><strong>Cook Time:</strong> ${recipe.cook_time}</p>
-                                        <p><strong>Total Time:</strong> ${recipe.total_time}</p>`;
+            generalDetailsParagraph.innerHTML = `<p><strong>Cantidad:</strong> ${recipe.yield}</p>
+                                        <p><strong>Dificultad:</strong> ${recipe.difficulty}</p>
+                                        <p><strong>Preparacion:</strong> ${recipe.prep_time}</p>
+                                        <p><strong>Cocción:</strong> ${recipe.cook_time}</p>
+                                        <p><strong>Total:</strong> ${recipe.total_time}</p>`;
             textSection.appendChild(generalDetailsParagraph);
+
+            //description
+            const description = document.createElement('div');
+            description.classList.add('description');
+            description.innerHTML = `${recipe.description}`;
+            textSection.appendChild(description);
 
             // Ingredients
             const ingredientsHeading = document.createElement('h2');
-            ingredientsHeading.textContent = 'Ingredients';
+            ingredientsHeading.textContent = 'Ingredientes';
             textSection.appendChild(ingredientsHeading);
             const ingredientsList = document.createElement('ul');
             recipe.ingredients.forEach(ingredient => {
-
-                console.log(ingredient);
                 const ingredientItem = document.createElement('li');
-                ingredientItem.innerHTML = `<strong>${ingredient.quantity}</strong> ${ingredient.name}${ingredient.info ? ` (${ingredient.info})` : ''}`;
+                ingredientItem.innerHTML = `${ingredient.name} ${ingredient.info ? ` (${ingredient.info})` : ''} <strong>${ingredient.quantity}</strong>`;
                 ingredientsList.appendChild(ingredientItem);
 
             });
@@ -135,9 +142,12 @@
             textSection.appendChild(ingredientsList);
 
             // Steps
+            const steps = document.createElement("div");
+            steps.classList.add("steps");
+
             const stepsHeading = document.createElement('h2');
-            stepsHeading.textContent = 'Steps';
-            textSection.appendChild(stepsHeading);
+            stepsHeading.textContent = 'Pasos';
+            steps.appendChild(stepsHeading);
 
             const stepsList = document.createElement('ol');
             recipe.steps.forEach(step => {
@@ -145,7 +155,8 @@
                 stepItem.textContent = step;
                 stepsList.appendChild(stepItem);
             });
-            textSection.appendChild(stepsList);
+            steps.appendChild(stepsList);
+            document.body.appendChild(steps)
 
             recipeContainer.appendChild(textSection);
 
@@ -162,7 +173,7 @@
         }
         fetch('./data.json')
             .then((response) => response.json())
-            .then((json) => displayRecipeDetails(json[0]));
+            .then((json) => displayRecipeDetails(json));
 
 
 
