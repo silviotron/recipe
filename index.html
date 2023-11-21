@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p,
+        ul,
+        ol {
+            margin-bottom: 15px;
+        }
+
+        li {
+            list-style-type: none;
+            margin-bottom: 8px;
+        }
+
+        strong {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .recipe-container {
+            display: flex;
+        }
+
+        .text-section {
+            flex: 2;
+            /* Adjust the flex property as needed */
+            margin-right: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            /* Adjust the flex property as needed */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border: none;
+            border-radius: 4px;
+            padding: 0px;
+        }
+
+        /* New styles for parallel columns */
+        .column-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .column {
+            margin-bottom: 20px;
+        }
+
+        /* Styles for inline General Details */
+        .general-details {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .general-details p {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="fileList"></ul>
+
+    <script>
+
+
+        // Function to create a recipe format for the details
+        function displayRecipeDetails(recipe) {
+            // Recipe Title
+            const titleHeading = document.createElement('h1');
+            titleHeading.textContent = recipe.title;
+            document.body.appendChild(titleHeading);
+
+            // Container for text and image
+            const recipeContainer = document.createElement('div');
+            recipeContainer.classList.add('recipe-container');
+            document.body.appendChild(recipeContainer);
+
+            // Text Section
+            const textSection = document.createElement('div');
+            textSection.classList.add('text-section');
+
+            // General Recipe Details
+            const generalDetailsParagraph = document.createElement('div');
+            generalDetailsParagraph.classList.add('general-details');
+            generalDetailsParagraph.innerHTML = `<p><strong>Yield:</strong> ${recipe.yield}</p>
+                                        <p><strong>Cuisine:</strong> ${recipe.cuisine}</p>
+                                        <p><strong>Difficulty:</strong> ${recipe.difficulty}</p>
+                                        <p><strong>Rating:</strong> ${recipe.rating}</p>
+                                        <p><strong>Prep Time:</strong> ${recipe.prep_time}</p>
+                                        <p><strong>Cook Time:</strong> ${recipe.cook_time}</p>
+                                        <p><strong>Total Time:</strong> ${recipe.total_time}</p>`;
+            textSection.appendChild(generalDetailsParagraph);
+
+            // Ingredients
+            const ingredientsHeading = document.createElement('h2');
+            ingredientsHeading.textContent = 'Ingredients';
+            textSection.appendChild(ingredientsHeading);
+            const ingredientsList = document.createElement('ul');
+            recipe.ingredients.forEach(ingredient => {
+
+                console.log(ingredient);
+                const ingredientItem = document.createElement('li');
+                ingredientItem.innerHTML = `<strong>${ingredient.quantity}</strong> ${ingredient.name}${ingredient.info ? ` (${ingredient.info})` : ''}`;
+                ingredientsList.appendChild(ingredientItem);
+
+            });
+
+            textSection.appendChild(ingredientsList);
+
+            // Steps
+            const stepsHeading = document.createElement('h2');
+            stepsHeading.textContent = 'Steps';
+            textSection.appendChild(stepsHeading);
+
+            const stepsList = document.createElement('ol');
+            recipe.steps.forEach(step => {
+                const stepItem = document.createElement('li');
+                stepItem.textContent = step;
+                stepsList.appendChild(stepItem);
+            });
+            textSection.appendChild(stepsList);
+
+            recipeContainer.appendChild(textSection);
+
+            // Image Section
+            const imageContainer = document.createElement('div');
+            imageContainer.classList.add('image-container');
+
+            const imageElement = document.createElement('img');
+            imageElement.src = recipe.image;
+            imageElement.alt = recipe.title;
+            imageContainer.appendChild(imageElement);
+
+            recipeContainer.appendChild(imageContainer);
+        }
+        fetch('./data.json')
+            .then((response) => response.json())
+            .then((json) => displayRecipeDetails(json[0]));
+
+
+
+
+
+    </script>
+</body>
+
+</html>
